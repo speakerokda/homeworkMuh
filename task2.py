@@ -1,4 +1,6 @@
-def second_max_element(list):
-	bez_povtora = list(set(list))
-	spisok = sorted(list, reverse = 1)
-	print(spisok[1])
+nums = [10, 3]
+UnicNums = sorted(list(set(nums)), reverse = 1)
+if len(UnicNums) > 1:
+	print(UnicNums[1])
+else:
+	print('Второго по величине элемента нет')
